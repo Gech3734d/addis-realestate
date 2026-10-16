@@ -1,0 +1,3 @@
+export default function Loading() {
+  return <div aria-label="Loading dashboard" aria-busy="true"><div className="skeleton skeleton-line" style={{width:240,height:30,marginBottom:28}}/><div className="stat-grid">{[1,2,3,4].map(n=><div className="stat-card" key={n}><div className="skeleton" style={{height:38,width:38}}/><div className="skeleton skeleton-line"/><div className="skeleton skeleton-line short"/></div>)}</div><div className="loading-grid">{[1,2,3].map(n=><div className="skeleton-card" key={n}><div className="skeleton skeleton-image"/><div className="skeleton skeleton-line"/><div className="skeleton skeleton-line short"/></div>)}</div></div>;
+}
